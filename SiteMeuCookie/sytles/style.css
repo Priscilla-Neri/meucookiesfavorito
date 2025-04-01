@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'LasVegasJackpot';
+    src: url('fonts/lasvegas-jackpot.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #C6E7FF 16.62%, #d4f6fd 85.61%);
+    font-family: 'LasVegasJackpot', sans-serif;
+}
+
+/* Estilo para a área de ovos */
+.ovos-pascoa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.linha-ovos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Garante que as imagens possam quebrar linha se necessário */
+}
+
+.ovo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espaço entre os ovos */
+}
+
+.ovo-pascoa {
+    width: 270px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.comprar-btn {
+    background-color: #1d08dd;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comprar-btn:hover {
+    background-color: #FF4500;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho__logo {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho__menu__item {
+    font-family: 'LasVegasJackpot', sans-serif;
+    color: #1c10c4;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 3px solid #1c10c4;
+}
+
+.conteudo__principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo__principal__escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo__principal__escrito__titulo {
+    font-family: 'lasvegas-jackpot', sans-serif;
+    font-weight: 150;
+    font-size: 1.5rem;
+    color: #195ddd;
+}
+
+.conteudo__principal__escrito__subtitulo {
+    font-family: 'lasvegas-jackpot', sans-serif;
+    font-weight: 150;
+    font-size: 1rem;
+}
+
+.conteudo__principal__video {
+    width: auto;
+    height: 40vh;
+}
+
+.conteudo__secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo__secundario__titulo {
+    border-top: 0.4px solid #1c10c4;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #195ddd;
+    margin-bottom: 48px;
+}
+
+.conteudo__secundario__paragrafo {
+    font-family: 'lasvegas-jackpot', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.rodape {
+    padding: 7px;
+    margin-bottom: 24px;
+    border-top: 3px solid #1c10c4;
+   }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(15, 147, 235, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.container__informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.container__input {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #195ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container__botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.container__botao {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.container__botao:hover {
+    background-color: #0056b3;
+}
+
+.container__botao:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.container__imagem-pessoa {
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 40px;
+    margin: 0%;
+    background-color: #2116b3;
+}
+
+.rodape__icone {
+    width: 40px; /* Tamanho do ícone */
+    margin: 0 10px;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.rodape__icone:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+  
+}
+
+/* Media Queries para telas menores */
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .conteudo__principal__titulo {
+        font-size: 1.5rem;
+    }
+
+    .conteudo__secundario__titulo {
+        font-size: 1.2rem;
+    }
+
+    .conteudo__secundario__paragrafo {
+        font-size: 0.9rem;
+    }
+
+    .conteudo__principal__video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustando as imagens para ficarem empilhadas em telas menores */
+    .linha-ovos {
+        flex-direction: column;
+        gap: 20px; /* Maior espaçamento entre as imagens */
+        align-items: center; /* Centraliza as imagens */
+    }
+
+    .ovo-pascoa {
+        width: 100%; /* Ajusta para ocupar toda a largura possível */
+        max-width: 270px; /* Limita o tamanho máximo da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo__principal__titulo {
+        font-size: 1.2rem;
+    }
+
+    .conteudo__secundario__titulo {
+        font-size: 1rem;
+    }
+
+    .conteudo__secundario__paragrafo {
+        font-size: 0.8rem;
+    }
+
+    .cabecalho__menu__item {
+        font-size: 0.9rem;
+    }
+}
